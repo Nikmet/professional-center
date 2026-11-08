@@ -1,0 +1,589 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Учебный центр «Профессионал»: рабочие профессии, охрана труда и безопасность производства. Демонстрационный сайт."
+    />
+    <meta name="color-scheme" content="light" />
+    <title>Профессиональное обучение — Учебный центр «Профессионал»</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="assets/vendor/bootstrap/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script
+      src="assets/vendor/bootstrap/bootstrap.bundle.min.js"
+      defer
+    ></script>
+    <script src="assets/js/main.js" defer></script>
+    <script src="assets/js/courses.js" defer></script>
+    <script src="assets/js/forms.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Перейти к содержанию</a>
+    <header>
+      <div class="topbar">
+        <div class="container topbar-inner">
+          <div class="topbar-contacts">
+            <a href="tel:+74920000000"
+              ><i class="bi bi-telephone" aria-hidden="true"></i>+7 (4922)
+              00-00-00</a
+            ><a href="mailto:info@professional.example"
+              ><i class="bi bi-envelope" aria-hidden="true"></i
+              >info@professional.example</a
+            >
+          </div>
+          <span class="topbar-hours"
+            ><i class="bi bi-clock" aria-hidden="true"></i>Пн–Пт:
+            9:00–18:00</span
+          >
+        </div>
+      </div>
+      <div class="brandbar">
+        <div
+          class="container d-flex justify-content-between align-items-center gap-4"
+        >
+          <a
+            class="brand"
+            href="index.html"
+            aria-label="Учебный центр Профессионал — главная"
+            ><span class="brand-symbol"
+              ><i class="bi bi-book" aria-hidden="true"></i></span
+            ><span
+              ><span class="brand-name">Профессионал</span
+              ><span class="brand-caption">Учебный центр</span></span
+            ></a
+          >
+          <p class="brand-summary">
+            Профессиональная подготовка<br />для работы на производстве
+          </p>
+          <a class="btn btn-outline-primary" href="contacts.html#feedback"
+            >Оставить заявку</a
+          >
+        </div>
+      </div>
+      <nav class="navbar navbar-expand-lg" aria-label="Основная навигация">
+        <div class="container">
+          <span class="nav-caption d-lg-none">Меню сайта</span
+          ><button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#main-navigation"
+            aria-controls="main-navigation"
+            aria-expanded="false"
+            aria-label="Открыть меню"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="main-navigation">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html" aria-current="page"
+                  >Главная</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="courses.html">Курсы</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">О центре</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="documents.html">Документы</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacts.html">Контакты</a>
+              </li>
+            </ul>
+            <a class="btn btn-primary nav-consult" href="contacts.html#feedback"
+              >Консультация <i class="bi bi-arrow-right" aria-hidden="true"></i
+            ></a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main id="main">
+      <section class="hero">
+        <div class="container">
+          <div class="row align-items-center g-4 g-xl-5">
+            <div class="col-lg-6">
+              <h1>Профессиональное обучение и повышение квалификации</h1>
+              <p class="hero-description">
+                Подготовка специалистов рабочих профессий, обучение охране труда
+                и безопасности производства. Поможем выбрать программу для вас
+                или сотрудников предприятия.
+              </p>
+              <div class="d-flex flex-wrap gap-3">
+                <a class="btn btn-primary" href="courses.html"
+                  >Выбрать курс
+                  <i class="bi bi-arrow-right" aria-hidden="true"></i></a
+                ><a class="btn btn-outline-primary" href="#consultation"
+                  >Оставить заявку</a
+                >
+              </div>
+              <p class="hero-note">
+                <i class="bi bi-person-workspace" aria-hidden="true"></i>Для
+                частных лиц и организаций
+              </p>
+            </div>
+            <div class="col-lg-6">
+              <img
+                src="assets/images/training.webp"
+                class="hero-image"
+                alt="Специалист в защитных очках работает на станке в учебной мастерской"
+                width="1200"
+                height="800"
+                fetchpriority="high"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Направления обучения</h2>
+            <a href="courses.html"
+              >Все программы <i class="bi bi-arrow-right" aria-hidden="true"></i
+            ></a>
+          </div>
+          <div class="row g-3">
+            <div class="col-sm-6 col-xl-3">
+              <article class="direction-card">
+                <i class="bi bi-tools" aria-hidden="true"></i>
+                <h3>Рабочие профессии</h3>
+                <p>
+                  Электромонтер, сварщик, слесарь, токарь и оператор котельной.
+                </p>
+                <a
+                  href="courses.html?category=%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B5%20%D0%BF%D1%80%D0%BE%D1%84%D0%B5%D1%81%D1%81%D0%B8%D0%B8"
+                  >Смотреть программы
+                  <i class="bi bi-arrow-right" aria-hidden="true"></i
+                ></a>
+              </article>
+            </div>
+            <div class="col-sm-6 col-xl-3">
+              <article class="direction-card">
+                <i class="bi bi-box-seam" aria-hidden="true"></i>
+                <h3>Подъемные сооружения</h3>
+                <p>Стропальщик, машинист крана и рабочий люльки подъемника.</p>
+                <a
+                  href="courses.html?category=%D0%9F%D0%BE%D0%B4%D1%8A%D0%B5%D0%BC%D0%BD%D1%8B%D0%B5%20%D1%81%D0%BE%D0%BE%D1%80%D1%83%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F"
+                  >Смотреть программы
+                  <i class="bi bi-arrow-right" aria-hidden="true"></i
+                ></a>
+              </article>
+            </div>
+            <div class="col-sm-6 col-xl-3">
+              <article class="direction-card">
+                <i class="bi bi-shield-check" aria-hidden="true"></i>
+                <h3>Охрана труда</h3>
+                <p>
+                  Подготовка специалистов и обучение безопасной работе на
+                  высоте.
+                </p>
+                <a
+                  href="courses.html?category=%D0%9E%D1%85%D1%80%D0%B0%D0%BD%D0%B0%20%D1%82%D1%80%D1%83%D0%B4%D0%B0"
+                  >Смотреть программы
+                  <i class="bi bi-arrow-right" aria-hidden="true"></i
+                ></a>
+              </article>
+            </div>
+            <div class="col-sm-6 col-xl-3">
+              <article class="direction-card">
+                <i class="bi bi-building-check" aria-hidden="true"></i>
+                <h3>Безопасность производства</h3>
+                <p>
+                  Пожарная и промышленная безопасность для ответственных
+                  работников.
+                </p>
+                <a
+                  href="courses.html?category=%D0%91%D0%B5%D0%B7%D0%BE%D0%BF%D0%B0%D1%81%D0%BD%D0%BE%D1%81%D1%82%D1%8C%20%D0%BF%D1%80%D0%BE%D0%B8%D0%B7%D0%B2%D0%BE%D0%B4%D1%81%D1%82%D0%B2%D0%B0"
+                  >Смотреть программы
+                  <i class="bi bi-arrow-right" aria-hidden="true"></i
+                ></a>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section-light">
+        <div class="container">
+          <div class="row g-4 g-xl-5 align-items-start">
+            <div class="col-lg-7">
+              <h2>О нашем учебном центре</h2>
+              <p>
+                «Профессионал» — учебный центр для тех, кто осваивает рабочую
+                специальность или обновляет профессиональные знания. Программы
+                объединяют теоретические занятия, разбор производственных задач
+                и практическую подготовку.
+              </p>
+              <p>
+                На этапе записи уточняем опыт слушателя, требования к
+                образованию и задачи работодателя. Это помогает подобрать
+                подходящий объем обучения и заранее согласовать организационные
+                вопросы.
+              </p>
+              <a href="about.html" class="btn btn-outline-primary"
+                >Подробнее об учебном центре</a
+              >
+            </div>
+            <div class="col-lg-5">
+              <div class="info-panel bg-white">
+                <h3>Обучение для предприятий</h3>
+                <p>
+                  Подберем программы для сотрудников и обсудим график групповых
+                  занятий.
+                </p>
+                <ul class="plain-list">
+                  <li>Подготовка и переподготовка работников</li>
+                  <li>Повышение квалификации специалистов</li>
+                  <li>Консультация по выбору программы</li>
+                </ul>
+                <a href="contacts.html#feedback"
+                  >Обсудить обучение сотрудников
+                  <i class="bi bi-arrow-right" aria-hidden="true"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Популярные программы</h2>
+            <a href="courses.html"
+              >Перейти в каталог
+              <i class="bi bi-arrow-right" aria-hidden="true"></i
+            ></a>
+          </div>
+          <p class="form-hint">
+            Примеры программ. Цены и продолжительность приведены для
+            демонстрации.
+          </p>
+          <div class="row g-4" id="popular-courses"></div>
+          <noscript
+            ><p>
+              Включите JavaScript для просмотра карточек. Перечень программ
+              также доступен в
+              <a href="assets/documents/programs.txt">текстовом файле</a>.
+            </p></noscript
+          >
+        </div>
+      </section>
+      <section class="section section-light benefits">
+        <div class="container">
+          <h2>Как организовано обучение</h2>
+          <div class="row g-4">
+            <div class="col-md-4 benefit">
+              <h3>
+                <i class="bi bi-tools" aria-hidden="true"></i>Практическая
+                подготовка
+              </h3>
+              <p>
+                Отработка рабочих приемов на стендах и оборудовании под
+                руководством преподавателя.
+              </p>
+            </div>
+            <div class="col-md-4 benefit">
+              <h3>
+                <i class="bi bi-calendar-check" aria-hidden="true"></i>Понятный
+                учебный план
+              </h3>
+              <p>
+                Содержание, продолжительность и график занятий обсуждаются до
+                начала обучения.
+              </p>
+            </div>
+            <div class="col-md-4 benefit">
+              <h3>
+                <i class="bi bi-people" aria-hidden="true"></i>Работа с
+                предприятиями
+              </h3>
+              <p>
+                Можно подобрать программы для группы сотрудников с учетом задач
+                производства.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <h2>Как записаться на обучение</h2>
+          <ol class="steps row g-4">
+            <li class="col-md-4">
+              <h3>Выберите программу</h3>
+              <p>
+                Сравните содержание, формат, продолжительность и стоимость в
+                каталоге.
+              </p>
+            </li>
+            <li class="col-md-4">
+              <h3>Уточните условия</h3>
+              <p>
+                Обсудите требования к поступлению, документы и удобный график
+                занятий.
+              </p>
+            </li>
+            <li class="col-md-4">
+              <h3>Оформите обучение</h3>
+              <p>
+                Подготовьте документы, согласуйте договор и приступайте к
+                занятиям.
+              </p>
+            </li>
+          </ol>
+        </div>
+      </section>
+      <section class="section section-light" id="consultation">
+        <div class="container">
+          <div class="row g-4 g-xl-5">
+            <div class="col-lg-5">
+              <h2>Поможем выбрать программу</h2>
+              <p>
+                Укажите направление и контактные данные. В рабочей версии сайта
+                специалист сможет уточнить ваш опыт и предложить подходящий
+                вариант обучения.
+              </p>
+              <p class="form-hint">
+                Это учебный проект. Для проверки формы используйте вымышленные
+                данные.
+              </p>
+              <p class="mb-0">
+                <a href="contacts.html"
+                  >Контактная информация
+                  <i class="bi bi-arrow-right" aria-hidden="true"></i
+                ></a>
+              </p>
+            </div>
+            <div class="col-lg-7">
+              <div class="form-panel">
+                <form data-demo-form novalidate>
+                  <p class="form-hint">
+                    Все поля обязательны. Форма работает в демонстрационном
+                    режиме: данные не сохраняются и не отправляются.
+                  </p>
+                  <noscript
+                    ><p class="alert alert-warning">
+                      Для проверки заявки включите JavaScript. Форма отключена,
+                      чтобы данные не отправлялись на сервер.
+                    </p></noscript
+                  >
+                  <fieldset disabled data-form-fields>
+                    <div class="row g-3">
+                      <div class="col-md-6">
+                        <label class="form-label" for="consult-name"
+                          >Ваше имя</label
+                        ><input
+                          class="form-control"
+                          id="consult-name"
+                          name="name"
+                          autocomplete="given-name"
+                          minlength="2"
+                          maxlength="80"
+                          required
+                          aria-describedby="consult-name-error"
+                        />
+                        <div class="invalid-feedback" id="consult-name-error">
+                          Укажите имя: не менее двух символов.
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <label class="form-label" for="consult-phone"
+                          >Телефон</label
+                        ><input
+                          class="form-control"
+                          type="tel"
+                          id="consult-phone"
+                          name="phone"
+                          autocomplete="tel"
+                          placeholder="+7 (900) 123-45-67"
+                          maxlength="25"
+                          required
+                          aria-describedby="consult-phone-error"
+                        />
+                        <div class="invalid-feedback" id="consult-phone-error">
+                          Введите номер: +7 или 8 и еще 10 цифр.
+                        </div>
+                      </div>
+
+                      <div class="col-12">
+                        <label class="form-label" for="consult-direction"
+                          >Интересующее направление</label
+                        ><select
+                          class="form-select"
+                          id="consult-direction"
+                          name="direction"
+                          required
+                          aria-describedby="consult-direction-error"
+                        >
+                          <option value="">Выберите направление</option>
+                          <option>Рабочие профессии</option>
+                          <option>Подъемные сооружения</option>
+                          <option>Охрана труда</option>
+                          <option>Безопасность производства</option>
+                          <option>Нужна помощь с выбором</option>
+                        </select>
+                        <div
+                          class="invalid-feedback"
+                          id="consult-direction-error"
+                        >
+                          Выберите направление или помощь с выбором.
+                        </div>
+                      </div>
+
+                      <div class="col-12">
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            id="consult-consent"
+                            name="consent"
+                            required
+                            aria-describedby="consult-consent-error"
+                          /><label
+                            class="form-check-label"
+                            for="consult-consent"
+                            >Я ознакомлен(а) с
+                            <a href="documents.html#privacy"
+                              >политикой обработки персональных данных</a
+                            >
+                            и согласен(на) на демонстрационную обработку
+                            формы.</label
+                          >
+                          <div
+                            class="invalid-feedback"
+                            id="consult-consent-error"
+                          >
+                            Подтвердите согласие для проверки формы.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <button class="btn btn-primary" type="submit">
+                          Получить консультацию
+                        </button>
+                      </div>
+                    </div>
+                  </fieldset>
+                  <div
+                    class="alert alert-success mt-4 mb-0"
+                    data-form-success
+                    role="status"
+                    tabindex="-1"
+                    hidden
+                  >
+                    Заявка успешно проверена в демонстрационном режиме. Данные
+                    не сохранены, письмо не отправлено.
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md-5">
+            <a
+              class="brand"
+              href="index.html"
+              aria-label="Учебный центр Профессионал — главная"
+              ><span class="brand-symbol"
+                ><i class="bi bi-book" aria-hidden="true"></i></span
+              ><span
+                ><span class="brand-name">Профессионал</span
+                ><span class="brand-caption">Учебный центр</span></span
+              ></a
+            >
+            <p class="footer-text">
+              Профессиональное обучение, переподготовка и повышение квалификации
+              специалистов рабочих профессий.
+            </p>
+          </div>
+          <div class="col-6 col-md-3">
+            <h2>Информация</h2>
+            <ul class="footer-links">
+              <li><a href="courses.html">Курсы</a></li>
+              <li><a href="about.html">О центре</a></li>
+              <li><a href="documents.html">Документы</a></li>
+              <li><a href="contacts.html">Контакты</a></li>
+              <li><a href="documents.html#privacy">Персональные данные</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-4">
+            <h2>Связаться с нами</h2>
+            <ul class="footer-links">
+              <li><a href="tel:+74920000000">+7 (4922) 00-00-00</a></li>
+              <li>
+                <a href="mailto:info@professional.example"
+                  >info@professional.example</a
+                >
+              </li>
+              <li>Пн–Пт: 9:00–18:00</li>
+              <li>г. Владимир, ул. Учебная, д. 10<br />Условный адрес</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p class="footer-disclaimer">
+            Учебный демонстрационный проект. Организация вымышленная; контакты,
+            программы, цены и документы условные. Фотографии созданы с помощью
+            ИИ. Заявки не отправляются.
+          </p>
+          <span>© 2026 «Профессионал»</span>
+        </div>
+      </div>
+    </footer>
+    <div
+      class="modal fade"
+      id="course-modal"
+      tabindex="-1"
+      aria-labelledby="course-modal-title"
+      aria-hidden="true"
+    >
+      <div
+        class="modal-dialog modal-lg modal-dialog-scrollable modal-dialog-centered"
+      >
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title" id="course-modal-title">
+              Программа обучения
+            </h2>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Закрыть"
+            ></button>
+          </div>
+          <div class="modal-body" id="course-modal-body"></div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-outline-secondary"
+              data-bs-dismiss="modal"
+            >
+              Закрыть</button
+            ><a
+              class="btn btn-primary"
+              id="course-apply"
+              href="contacts.html#feedback"
+              >Оставить заявку на курс</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

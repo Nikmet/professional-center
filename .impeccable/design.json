@@ -1,0 +1,142 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-08T22:42:24.579Z",
+  "title": "Design System: Учебный центр «Профессионал»",
+  "extensions": {
+    "shadows": [
+      {
+        "name": "field-focus",
+        "value": "0 0 0 .25rem rgba(13,110,253,.25)",
+        "purpose": "Штатный фокус поля Bootstrap."
+      },
+      {
+        "name": "accordion-focus",
+        "value": "0 0 0 3px #084298",
+        "purpose": "Фокус заголовка аккордеона."
+      }
+    ],
+    "motion": [
+      {
+        "name": "button-transition",
+        "value": "color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out",
+        "purpose": "Переход состояний кнопок Bootstrap; отключен при prefers-reduced-motion."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "sm",
+        "value": "576px"
+      },
+      {
+        "name": "md",
+        "value": "768px"
+      },
+      {
+        "name": "lg",
+        "value": "992px"
+      },
+      {
+        "name": "xl",
+        "value": "1200px"
+      },
+      {
+        "name": "xxl",
+        "value": "1400px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Основная кнопка",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Главное действие страницы.",
+      "html": "<button class=\"ds-primary\">Выбрать курс</button>",
+      "css": ".ds-primary{font-family:Arial,Helvetica,sans-serif;display:inline-block;font-size:16px;line-height:1.6;font-weight:600;padding:10px 20px;min-height:44px;border:1px solid #0d6efd;border-radius:6px;text-decoration:none;cursor:pointer;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;background:#0d6efd;color:#fff}.ds-primary:hover{background:#0b5ed7;border-color:#0a58ca}.ds-primary:active{background:#0a58ca;border-color:#0a53be}.ds-primary:focus-visible{outline:3px solid #084298;outline-offset:4px;}"
+    },
+    {
+      "name": "Контурная кнопка",
+      "kind": "button",
+      "refersTo": "button-outline",
+      "description": "Заявка и второстепенное действие.",
+      "html": "<button class=\"ds-outline\">Оставить заявку</button>",
+      "css": ".ds-outline{font-family:Arial,Helvetica,sans-serif;display:inline-block;font-size:16px;line-height:1.6;font-weight:600;padding:10px 20px;min-height:44px;border:1px solid #0d6efd;border-radius:6px;text-decoration:none;cursor:pointer;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;background:transparent;color:#084298}.ds-outline:hover,.ds-outline:active{background:#0d6efd;color:#fff}.ds-outline:focus-visible{outline:3px solid #084298;outline-offset:4px;}"
+    },
+    {
+      "name": "Поле формы",
+      "kind": "input",
+      "description": "Подписанное текстовое поле заявки.",
+      "html": "<label class=\"ds-label\" for=\"ds-name\">Ваше имя</label><input class=\"ds-input\" id=\"ds-name\" placeholder=\"Иван Иванов\">",
+      "css": ".ds-label{font-family:Arial,Helvetica,sans-serif;display:block;font-size:15px;font-weight:600;margin-bottom:8px;color:#212529}.ds-input{font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:1.6;min-height:46px;padding:6px 12px;border:1px solid #adb5bd;border-radius:6px;background:white;color:#212529;caret-color:#084298}.ds-input::placeholder{color:#6c757d}.ds-input:focus{border-color:#86b7fe;outline:0;box-shadow:0 0 0 .25rem rgba(13,110,253,.25)}"
+    },
+    {
+      "name": "Навигация",
+      "kind": "nav",
+      "description": "Активная страница отмечена синей линией.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Основная навигация\"><a class=\"ds-current\" href=\"#\" aria-current=\"page\">Главная</a><a href=\"#\">Курсы</a><a href=\"#\">О центре</a></nav>",
+      "css": ".ds-nav{font-family:Arial,Helvetica,sans-serif;display:flex;flex-wrap:wrap;gap:8px;background:#f8f9fa;border-block:1px solid #dee2e6}.ds-nav a{padding:14px 23px;color:#212529;font-size:15px;font-weight:600;text-decoration:none;border-bottom:3px solid transparent}.ds-nav a:hover{background:#e9ecef;color:#084298}.ds-nav .ds-current{color:#084298;border-bottom-color:#0d6efd}.ds-nav a:focus-visible{outline:3px solid #084298;outline-offset:4px;}"
+    },
+    {
+      "name": "Метка направления",
+      "kind": "chip",
+      "refersTo": "category",
+      "description": "Информационная метка, не интерактивный фильтр.",
+      "html": "<span class=\"ds-category\">Рабочие профессии</span>",
+      "css": ".ds-category{font-family:Arial,Helvetica,sans-serif;display:inline-block;background:#f8f9fa;border:1px solid #dee2e6;color:#495057;font-size:12px;font-weight:400;line-height:1.4;padding:.35em .65em;border-radius:6px;text-align:left;white-space:normal}"
+    },
+    {
+      "name": "Карточка курса",
+      "kind": "card",
+      "refersTo": "course-card",
+      "description": "Название программы, длительность, цена и подробности.",
+      "html": "<article class=\"ds-course\"><h2>Электрогазосварщик</h2><p>Профессиональная подготовка</p><p class=\"ds-meta\">Срок обучения: 2 месяца</p><div class=\"ds-bottom\"><strong>18 000 ₽</strong><button>Подробнее</button></div></article>",
+      "css": ".ds-course{font-family:Arial,Helvetica,sans-serif;padding:24px;border:1px solid #dee2e6;border-radius:6px;background:white;color:#212529;max-width:350px}.ds-course h2{font-size:21px;line-height:1.25;margin:12px 0;font-weight:700}.ds-course p{font-size:15px;line-height:1.6;color:#495057;margin-bottom:18px}.ds-course .ds-meta{font-size:14px}.ds-bottom{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;border-top:1px solid #dee2e6;padding-top:16px}.ds-bottom strong{font-size:23px;color:#084298;font-variant-numeric:tabular-nums}.ds-bottom button{font-family:Arial,Helvetica,sans-serif;display:inline-block;font-size:16px;line-height:1.6;font-weight:600;padding:10px 20px;min-height:44px;border:1px solid #0d6efd;border-radius:6px;text-decoration:none;cursor:pointer;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;padding:8px 13px;font-size:14px;background:transparent;color:#084298}.ds-bottom button:hover{background:#0d6efd;color:white}.ds-bottom button:focus-visible{outline:3px solid #084298;outline-offset:4px;}"
+    },
+    {
+      "name": "Информационная панель",
+      "kind": "custom",
+      "description": "Спокойное выделение поясняющего содержания.",
+      "html": "<aside class=\"ds-info\"><h2>Для организаций</h2><p>Поможем подобрать программу для сотрудников предприятия.</p></aside>",
+      "css": ".ds-info{font-family:Arial,Helvetica,sans-serif;padding:28px;background:#f8f9fa;border:1px solid #dee2e6;border-radius:6px;color:#212529}.ds-info h2{font-size:23px;line-height:1.25;font-weight:700;margin:0 0 24px}.ds-info p{font-size:16px;line-height:1.6;margin:0 0 18px}"
+    },
+    {
+      "name": "Шаг обучения",
+      "kind": "custom",
+      "description": "Нумерованный шаг с небольшим обведенным маркером.",
+      "html": "<div class=\"ds-step\"><span>1</span><h3>Выберите программу</h3><p>Ознакомьтесь с направлениями обучения.</p></div>",
+      "css": ".ds-step{font-family:Arial,Helvetica,sans-serif;position:relative;padding-left:52px;color:#212529}.ds-step span{position:absolute;left:0;top:0;width:35px;height:35px;display:grid;place-items:center;border:1px solid #dee2e6;border-radius:4px;color:#084298;font-weight:700}.ds-step h3{font-size:19px;line-height:1.25;font-weight:700;margin:0 0 7px}.ds-step p{font-size:14px;line-height:1.6;color:#495057;margin:0}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Традиционный корпоративный учебный центр",
+    "overview": "Традиционный российский корпоративный сайт учебного центра: спокойный официальный тон, знакомая сетка Bootstrap и ясная иерархия. Визуальная система извлечена из пяти HTML-страниц, assets/css/style.css и локального Bootstrap 5.3.3.\n\nБелые и светло-серые поверхности разделены тонкими границами; синий обозначает действия, темно-синий — опорные области и акценты. Фотографии производственного обучения дополняют содержание без декоративных эффектов.",
+    "keyCharacteristics": [
+      "Arial и понятная иерархия заголовков.",
+      "Синяя корпоративная палитра и тонкие границы.",
+      "Небольшие скругления, плоские поверхности.",
+      "Адаптивная сетка и видимые состояния управления."
+    ],
+    "rules": [
+      {
+        "name": "The Контраст Rule",
+        "body": "На светло-сером фоне пояснения используют surface-hint, ссылки вне кнопок — primary-dark.",
+        "section": "colors"
+      },
+      {
+        "name": "The Плоская поверхность Rule",
+        "body": "Не добавлять тени карточкам и фоновым секциям; глубина обозначает состояние управления и модальность.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do использовать общую сетку Bootstrap и локальные зависимости.",
+      "Do сохранять подписи полей, видимый фокус и контрастные пояснения на светлом фоне.",
+      "Do сохранять пропорции фотографий и содержательные alt-тексты."
+    ],
+    "donts": [
+      "Don’t добавлять градиенты, крупные скругления или декоративные тени.",
+      "Don’t заменять Arial декоративным шрифтом или вводить новую визуальную концепцию.",
+      "Don’t превращать условные документы, цены и контакты в реальные доказательства надежности."
+    ]
+  }
+}

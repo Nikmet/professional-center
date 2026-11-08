@@ -1,0 +1,328 @@
+{
+  "viewports": [
+    {
+      "page": "index",
+      "width": 375,
+      "scrollWidth": 375,
+      "headings": 1,
+      "images": true,
+      "active": "index.html"
+    },
+    {
+      "page": "courses",
+      "width": 375,
+      "scrollWidth": 375,
+      "headings": 1,
+      "images": true,
+      "active": "courses.html"
+    },
+    {
+      "page": "about",
+      "width": 375,
+      "scrollWidth": 375,
+      "headings": 1,
+      "images": true,
+      "active": "about.html"
+    },
+    {
+      "page": "documents",
+      "width": 375,
+      "scrollWidth": 375,
+      "headings": 1,
+      "images": true,
+      "active": "documents.html"
+    },
+    {
+      "page": "contacts",
+      "width": 375,
+      "scrollWidth": 375,
+      "headings": 1,
+      "images": true,
+      "active": "contacts.html"
+    },
+    {
+      "page": "index",
+      "width": 768,
+      "scrollWidth": 768,
+      "headings": 1,
+      "images": true,
+      "active": "index.html"
+    },
+    {
+      "page": "courses",
+      "width": 768,
+      "scrollWidth": 768,
+      "headings": 1,
+      "images": true,
+      "active": "courses.html"
+    },
+    {
+      "page": "about",
+      "width": 768,
+      "scrollWidth": 768,
+      "headings": 1,
+      "images": true,
+      "active": "about.html"
+    },
+    {
+      "page": "documents",
+      "width": 768,
+      "scrollWidth": 768,
+      "headings": 1,
+      "images": true,
+      "active": "documents.html"
+    },
+    {
+      "page": "contacts",
+      "width": 768,
+      "scrollWidth": 768,
+      "headings": 1,
+      "images": true,
+      "active": "contacts.html"
+    },
+    {
+      "page": "index",
+      "width": 1024,
+      "scrollWidth": 1024,
+      "headings": 1,
+      "images": true,
+      "active": "index.html"
+    },
+    {
+      "page": "courses",
+      "width": 1024,
+      "scrollWidth": 1024,
+      "headings": 1,
+      "images": true,
+      "active": "courses.html"
+    },
+    {
+      "page": "about",
+      "width": 1024,
+      "scrollWidth": 1024,
+      "headings": 1,
+      "images": true,
+      "active": "about.html"
+    },
+    {
+      "page": "documents",
+      "width": 1024,
+      "scrollWidth": 1024,
+      "headings": 1,
+      "images": true,
+      "active": "documents.html"
+    },
+    {
+      "page": "contacts",
+      "width": 1024,
+      "scrollWidth": 1024,
+      "headings": 1,
+      "images": true,
+      "active": "contacts.html"
+    },
+    {
+      "page": "index",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "headings": 1,
+      "images": true,
+      "active": "index.html"
+    },
+    {
+      "page": "courses",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "headings": 1,
+      "images": true,
+      "active": "courses.html"
+    },
+    {
+      "page": "about",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "headings": 1,
+      "images": true,
+      "active": "about.html"
+    },
+    {
+      "page": "documents",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "headings": 1,
+      "images": true,
+      "active": "documents.html"
+    },
+    {
+      "page": "contacts",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "headings": 1,
+      "images": true,
+      "active": "contacts.html"
+    }
+  ],
+  "functionality": [
+    "Поиск с ё/е и регистром; четыре фильтра; сброс; счетчик; пустое состояние; все 12 модальных окон; Escape и возврат фокуса.",
+    "Обе формы: обязательные поля, пробелы в имени, неверный телефон, email, длина сообщения, согласие, успех и сброс; отсутствие POST; перенос выбранного курса.",
+    "Шесть документов: модальные представления и локальные TXT; все вопросы двух FAQ.",
+    "Мобильное меню Bootstrap Collapse: раскрытие, переход на курсы, активная страница.",
+    "Без JavaScript обе формы отключены, показано объяснение; статическая навигация сохранена."
+  ],
+  "accessibility": [
+    {
+      "page": "index",
+      "width": 375,
+      "violations": []
+    },
+    {
+      "page": "courses",
+      "width": 375,
+      "violations": []
+    },
+    {
+      "page": "about",
+      "width": 375,
+      "violations": []
+    },
+    {
+      "page": "documents",
+      "width": 375,
+      "violations": []
+    },
+    {
+      "page": "contacts",
+      "width": 375,
+      "violations": []
+    },
+    {
+      "page": "index",
+      "width": 1440,
+      "violations": []
+    },
+    {
+      "page": "courses",
+      "width": 1440,
+      "violations": []
+    },
+    {
+      "page": "about",
+      "width": 1440,
+      "violations": []
+    },
+    {
+      "page": "documents",
+      "width": 1440,
+      "violations": []
+    },
+    {
+      "page": "contacts",
+      "width": 1440,
+      "violations": []
+    }
+  ],
+  "links": [
+    {
+      "page": "index",
+      "width": 375,
+      "checked": 15
+    },
+    {
+      "page": "courses",
+      "width": 375,
+      "checked": 10
+    },
+    {
+      "page": "about",
+      "width": 375,
+      "checked": 10
+    },
+    {
+      "page": "documents",
+      "width": 375,
+      "checked": 16
+    },
+    {
+      "page": "contacts",
+      "width": 375,
+      "checked": 10
+    },
+    {
+      "page": "index",
+      "width": 768,
+      "checked": 15
+    },
+    {
+      "page": "courses",
+      "width": 768,
+      "checked": 10
+    },
+    {
+      "page": "about",
+      "width": 768,
+      "checked": 10
+    },
+    {
+      "page": "documents",
+      "width": 768,
+      "checked": 16
+    },
+    {
+      "page": "contacts",
+      "width": 768,
+      "checked": 10
+    },
+    {
+      "page": "index",
+      "width": 1024,
+      "checked": 15
+    },
+    {
+      "page": "courses",
+      "width": 1024,
+      "checked": 10
+    },
+    {
+      "page": "about",
+      "width": 1024,
+      "checked": 10
+    },
+    {
+      "page": "documents",
+      "width": 1024,
+      "checked": 16
+    },
+    {
+      "page": "contacts",
+      "width": 1024,
+      "checked": 10
+    },
+    {
+      "page": "index",
+      "width": 1440,
+      "checked": 15
+    },
+    {
+      "page": "courses",
+      "width": 1440,
+      "checked": 10
+    },
+    {
+      "page": "about",
+      "width": 1440,
+      "checked": 10
+    },
+    {
+      "page": "documents",
+      "width": 1440,
+      "checked": 16
+    },
+    {
+      "page": "contacts",
+      "width": 1440,
+      "checked": 10
+    }
+  ],
+  "errors": [],
+  "failedResources": [],
+  "timestamp": "2026-11-08T22:43:51.303Z"
+}

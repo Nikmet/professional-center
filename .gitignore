@@ -1,0 +1,16 @@
+# Локальные журналы и тяжелые снимки проверки не нужны для публикации.
+.impeccable/*
+!.impeccable/design.json
+!.impeccable/surface.md
+!.impeccable/review/
+.impeccable/review/*
+!.impeccable/review/AUDIT.md
+!.impeccable/review/checks.json
+!.impeccable/review/reviewer.md
+!.impeccable/review/verdict.md
+node_modules/
+.env
+.env.*
+*.log
+Thumbs.db
+.DS_Store

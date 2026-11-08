@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Каталог 12 демонстрационных программ: рабочие профессии, подъемные сооружения, охрана труда и безопасность производства."
+    />
+    <meta name="color-scheme" content="light" />
+    <title>Программы обучения — Учебный центр «Профессионал»</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="assets/vendor/bootstrap/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script
+      src="assets/vendor/bootstrap/bootstrap.bundle.min.js"
+      defer
+    ></script>
+    <script src="assets/js/main.js" defer></script>
+    <script src="assets/js/courses.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Перейти к содержанию</a>
+    <header>
+      <div class="topbar">
+        <div class="container topbar-inner">
+          <div class="topbar-contacts">
+            <a href="tel:+74920000000"
+              ><i class="bi bi-telephone" aria-hidden="true"></i>+7 (4922)
+              00-00-00</a
+            ><a href="mailto:info@professional.example"
+              ><i class="bi bi-envelope" aria-hidden="true"></i
+              >info@professional.example</a
+            >
+          </div>
+          <span class="topbar-hours"
+            ><i class="bi bi-clock" aria-hidden="true"></i>Пн–Пт:
+            9:00–18:00</span
+          >
+        </div>
+      </div>
+      <div class="brandbar">
+        <div
+          class="container d-flex justify-content-between align-items-center gap-4"
+        >
+          <a
+            class="brand"
+            href="index.html"
+            aria-label="Учебный центр Профессионал — главная"
+            ><span class="brand-symbol"
+              ><i class="bi bi-book" aria-hidden="true"></i></span
+            ><span
+              ><span class="brand-name">Профессионал</span
+              ><span class="brand-caption">Учебный центр</span></span
+            ></a
+          >
+          <p class="brand-summary">
+            Профессиональная подготовка<br />для работы на производстве
+          </p>
+          <a class="btn btn-outline-primary" href="contacts.html#feedback"
+            >Оставить заявку</a
+          >
+        </div>
+      </div>
+      <nav class="navbar navbar-expand-lg" aria-label="Основная навигация">
+        <div class="container">
+          <span class="nav-caption d-lg-none">Меню сайта</span
+          ><button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#main-navigation"
+            aria-controls="main-navigation"
+            aria-expanded="false"
+            aria-label="Открыть меню"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="main-navigation">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Главная</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  href="courses.html"
+                  aria-current="page"
+                  >Курсы</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">О центре</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="documents.html">Документы</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacts.html">Контакты</a>
+              </li>
+            </ul>
+            <a class="btn btn-primary nav-consult" href="contacts.html#feedback"
+              >Консультация <i class="bi bi-arrow-right" aria-hidden="true"></i
+            ></a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main id="main">
+      <div class="page-intro">
+        <div class="container">
+          <nav aria-label="Хлебные крошки">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Курсы</li>
+            </ol>
+          </nav>
+          <h1>Программы обучения</h1>
+          <p>
+            Выберите направление и сравните программы по содержанию,
+            продолжительности и стоимости. Для каждой программы доступны
+            подробности и переход к заявке.
+          </p>
+        </div>
+      </div>
+      <section class="section">
+        <div class="container">
+          <div class="filter-panel">
+            <div class="row g-3 align-items-end">
+              <div class="col-md-6">
+                <label class="form-label" for="course-search"
+                  >Поиск по названию</label
+                >
+                <div class="input-group">
+                  <span class="input-group-text bg-white"
+                    ><i class="bi bi-search" aria-hidden="true"></i></span
+                  ><input
+                    type="search"
+                    class="form-control"
+                    id="course-search"
+                    placeholder="Например, электромонтер"
+                    autocomplete="off"
+                  />
+                </div>
+              </div>
+              <div class="col-md-4">
+                <label class="form-label" for="course-category"
+                  >Направление</label
+                ><select class="form-select" id="course-category">
+                  <option value="">Все направления</option>
+                  <option>Рабочие профессии</option>
+                  <option>Подъемные сооружения</option>
+                  <option>Охрана труда</option>
+                  <option>Безопасность производства</option>
+                </select>
+              </div>
+              <div class="col-md-2">
+                <button
+                  type="button"
+                  class="btn btn-outline-secondary w-100"
+                  id="reset-filters"
+                >
+                  Сбросить
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex justify-content-between gap-2 flex-wrap mb-4">
+            <p
+              class="result-count mb-0"
+              id="course-count"
+              role="status"
+              aria-live="polite"
+            ></p>
+            <p class="form-hint mb-0">Цены и сроки — демонстрационные</p>
+          </div>
+          <div class="row g-4" id="course-catalog"></div>
+          <div class="info-panel text-center" id="no-courses" hidden>
+            <h2>Программы не найдены</h2>
+            <p class="mb-0">
+              Попробуйте другое название или сбросьте фильтры. Можно искать по
+              части слова.
+            </p>
+          </div>
+          <noscript
+            ><p class="alert alert-warning">
+              Для поиска и просмотра подробностей включите JavaScript.
+              <a href="assets/documents/programs.txt"
+                >Скачать перечень программ (TXT)</a
+              >.
+            </p></noscript
+          >
+        </div>
+      </section>
+      <section class="section section-light">
+        <div class="container">
+          <h2>Практика по выбранной профессии</h2>
+          <p class="reading mb-4">
+            Учебные задания помогают связать теорию с повседневной работой: от
+            измерения детали до подготовки оборудования и проверки безопасности.
+          </p>
+          <div class="row g-4 catalog-directions">
+            <div class="col-sm-6 col-lg-3">
+              <figure>
+                <img
+                  src="assets/images/welding.webp"
+                  class="photo"
+                  alt="Практическая сварка стального образца в защитной маске"
+                  width="1200"
+                  height="800"
+                  loading="lazy"
+                />
+                <figcaption>Сварочные работы</figcaption>
+              </figure>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+              <figure>
+                <img
+                  src="assets/images/electrical.webp"
+                  class="photo"
+                  alt="Проверка учебного электрического щита измерительным прибором"
+                  width="1200"
+                  height="800"
+                  loading="lazy"
+                />
+                <figcaption>Электромонтаж</figcaption>
+              </figure>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+              <figure>
+                <img
+                  src="assets/images/metalwork.webp"
+                  class="photo"
+                  alt="Измерение металлической детали штангенциркулем у слесарного верстака"
+                  width="1200"
+                  height="800"
+                  loading="lazy"
+                />
+                <figcaption>Слесарное дело</figcaption>
+              </figure>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+              <figure>
+                <img
+                  src="assets/images/lifting.webp"
+                  class="photo"
+                  alt="Инструктор и слушатель проверяют стропы на грузе в мастерской"
+                  width="1200"
+                  height="800"
+                  loading="lazy"
+                />
+                <figcaption>Подъемное оборудование</figcaption>
+              </figure>
+            </div>
+          </div>
+          <p class="form-hint mt-3 mb-0">
+            Иллюстрации учебного процесса созданы с помощью ИИ.
+          </p>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <div class="row g-4">
+            <div class="col-lg-7">
+              <h2>Перед началом обучения</h2>
+              <p>
+                Уточните, подходит ли программа вашему опыту и образованию. Для
+                отдельных профессий могут потребоваться медицинское заключение,
+                опыт работы или дополнительные документы.
+              </p>
+              <p class="mb-0">
+                График практики, содержание итоговой аттестации и вид
+                выдаваемого документа согласуются до оформления договора.
+                Указанные часы — академические, по 45 минут.
+              </p>
+            </div>
+            <div class="col-lg-5">
+              <div class="info-panel">
+                <h3>Не нашли нужную специальность?</h3>
+                <p>
+                  Опишите профессию и задачи сотрудника. В рабочей версии центра
+                  специалист сможет проверить возможность подготовки.
+                </p>
+                <a class="btn btn-primary" href="contacts.html#feedback"
+                  >Задать вопрос</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md-5">
+            <a
+              class="brand"
+              href="index.html"
+              aria-label="Учебный центр Профессионал — главная"
+              ><span class="brand-symbol"
+                ><i class="bi bi-book" aria-hidden="true"></i></span
+              ><span
+                ><span class="brand-name">Профессионал</span
+                ><span class="brand-caption">Учебный центр</span></span
+              ></a
+            >
+            <p class="footer-text">
+              Профессиональное обучение, переподготовка и повышение квалификации
+              специалистов рабочих профессий.
+            </p>
+          </div>
+          <div class="col-6 col-md-3">
+            <h2>Информация</h2>
+            <ul class="footer-links">
+              <li><a href="courses.html">Курсы</a></li>
+              <li><a href="about.html">О центре</a></li>
+              <li><a href="documents.html">Документы</a></li>
+              <li><a href="contacts.html">Контакты</a></li>
+              <li><a href="documents.html#privacy">Персональные данные</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-4">
+            <h2>Связаться с нами</h2>
+            <ul class="footer-links">
+              <li><a href="tel:+74920000000">+7 (4922) 00-00-00</a></li>
+              <li>
+                <a href="mailto:info@professional.example"
+                  >info@professional.example</a
+                >
+              </li>
+              <li>Пн–Пт: 9:00–18:00</li>
+              <li>г. Владимир, ул. Учебная, д. 10<br />Условный адрес</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p class="footer-disclaimer">
+            Учебный демонстрационный проект. Организация вымышленная; контакты,
+            программы, цены и документы условные. Фотографии созданы с помощью
+            ИИ. Заявки не отправляются.
+          </p>
+          <span>© 2026 «Профессионал»</span>
+        </div>
+      </div>
+    </footer>
+    <div
+      class="modal fade"
+      id="course-modal"
+      tabindex="-1"
+      aria-labelledby="course-modal-title"
+      aria-hidden="true"
+    >
+      <div
+        class="modal-dialog modal-lg modal-dialog-scrollable modal-dialog-centered"
+      >
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title" id="course-modal-title">
+              Программа обучения
+            </h2>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Закрыть"
+            ></button>
+          </div>
+          <div class="modal-body" id="course-modal-body"></div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-outline-secondary"
+              data-bs-dismiss="modal"
+            >
+              Закрыть</button
+            ><a
+              class="btn btn-primary"
+              id="course-apply"
+              href="contacts.html#feedback"
+              >Оставить заявку на курс</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
